@@ -27,7 +27,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</flow>
 	<flow name="POST-implementation-ExpFlow1" doc:id="0b495b4e-9fd5-482d-8b10-caf51a09d872" >
 		<logger level="INFO" doc:name="Begin Request" doc:id="d1881850-fcaa-4266-a243-f3eb59b7e254" />
-		<http:request method="POST" doc:name="Request to Add games to Proc" doc:id="3ad65f24-e86f-4ab6-bfda-6c855f5e117d" config-ref="HTTP_Request_configuration1" path="/api/proc">
+		<http:request method="POST" doc:name="Request to Add games to Proc" doc:id="3ad65f24-e86f-4ab6-bfda-6c855f5e117d" config-ref="HTTP_Request_configuration" path="/api/proc">
 			<http:query-params ><![CDATA[#[output application/java
 ---
 {
